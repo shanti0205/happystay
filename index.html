@@ -20,7 +20,7 @@
             <div class="col-6 w-50 h-50 text-center">
                
                 <!---->
-                    <button type="button"  class="btn btn-outline-success w-100 h-100 " data-bs-toggle="modal" data-bs-target="#checkInModal">
+                    <button type="button" onclick="addXbText ('歡迎光臨!五色糰飯店~');" class="btn btn-outline-success w-100 h-100 " data-bs-toggle="modal" data-bs-target="#checkInModal">
                         辦理入住
                     </button>
                     
@@ -29,44 +29,18 @@
                         <div class="modal-dialog modal-fullscreen">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="checkInModalLabel">五色糰飯店 櫃台</h1>
+                            <h1 class="modal-title fs-5" id="checkInModalLabel">五色糰飯店 櫃檯</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <!--小布說話(入住)-->
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                       <div class="row justify-content-center align-items-center">
-                                            <!--小不說話頭貼比例-->
-                                            <div class="col-3">
-                                                <img src="./pic/xiaoBu.png" class="img-fluid bg-white shadow-sm rounded-circle" style="height: 90px;" alt="小布頭貼" >
-                                            </div>
-                                            <!--小不說話比例-->
-                                            <div class="col-9">
-                                                <p class="rounded-pill bg-light my-2 p-1 shadow-sm ">歡迎光臨!五色糰飯店。</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                               <div id="chatHistory_CI">
+                                   
+                                                                   
                                 </div>
-                                 <!--學生說話(入住)-->
-                                 <div class="row justify-content-end align-items-center">
-                                    <div class="col-12 col-md-6">
-                                       <div class="row justify-content-center align-items-center">
-                                           
-                                            <!--學生說話比例-->
-                                            <div class="col-9">
-                                                <p class="rounded-pill bg-light my-2 p-1 shadow-sm ">歡迎光臨!五色糰飯店。</p>
-                                            </div> 
-                                            <!--學生說話頭貼比例-->
-                                            <div class="col-3">
-                                                <img src="./pic/user.png" class="img-fluid bg-white shadow-sm rounded-circle" style="height: 90px;" alt="小布頭貼" >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="modal-footer border-0">
-                                <input type="text" placeholder="請輸入..." class="form-control rounded-pill">
+                                <input id="checkInInput" type="text" placeholder="請輸入..." class="form-control rounded-pill">
                             
                             </div>
                         </div>
@@ -75,7 +49,34 @@
                 <!---->
             </div>
             <div class="col-6 w-50 h-50 text-center">
-                <button class="btn btn-outline-danger w-100 h-100">辦理退房</button>
+                <!---->
+                <button type="button" onclick="addXbText ('您好，有沒有什麼我可以幫您的？');" class="btn btn-outline-danger w-100 h-100 " data-bs-toggle="modal" data-bs-target="#checkOutModal">
+                    辦理退房
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="checkOutModal" tabindex="-1" aria-labelledby="checkOutModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="checkOutModalLabel">五色糰飯店 櫃檯</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <div id="chatHistory_CO">
+                               
+                                                               
+                            </div>
+
+                        </div>
+                        <div class="modal-footer border-0">
+                            <input id="checkOutInput" type="text" placeholder="請輸入..." class="form-control rounded-pill">
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            <!---->
             </div>
         </div>
         
@@ -87,6 +88,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!--general.js-->
+    <script src="./js/general.js"></script>
     <!--checkin.js-->
-    <script src="js/checkin.js"></script>
+    <script src="./js/checkin.js"></script>
+    <!--checkout.js-->
+    <script src="./js/checkout.js"></script>
 </html>
