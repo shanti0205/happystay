@@ -39,11 +39,11 @@ function addXbText(text, mode){
                 <div class="col-12 col-md-6">
                     <div class="row justify-content-center align-items-center">
                         <!--小不說話頭貼比例-->
-                        <div class="col-3">
+                        <div class="col-4">
                             <img src="./pic/xiaoBu.png" class="img-fluid bg-white shadow-sm rounded-circle" style="height: 90px;" alt="小布頭貼" >
                         </div>
                         <!--小不說話比例-->
-                        <div class="col-9">
+                        <div class="col-8">
                             <p class="rounded-pill bg-light my-2 p-1 shadow-sm ">${text}</p>
                         </div>
                     </div>
@@ -65,11 +65,11 @@ function addUserText(text, mode){
                 <div class="row justify-content-center align-items-center">
                     
                         <!--學生說話比例-->
-                        <div class="col-9">
+                        <div class="col-8">
                             <p class="rounded-pill my-2 p-1 shadow-sm " style="background-color:#8FBC8F;color:white;">${text}</p>
                         </div> 
                         <!--學生說話頭貼比例-->
-                        <div class="col-3">
+                        <div class="col-4">
                             <img src="./pic/user.png" class="img-fluid bg-white shadow-sm rounded-circle" style="height: 90px;" alt="小布頭貼" >
                         </div>
                 </div>
