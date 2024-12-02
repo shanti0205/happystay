@@ -17,7 +17,7 @@ function checkForCheckInAction() {
         action = "name"; 
     }else if (ifHeard(checkInUserInput, "護照")) {
         action = "passport";
-    }else if (ifHeard(checkInUserInput, "五月")) {
+    }else if (ifHeard(checkInUserInput, "五月")||ifHeard(checkInUserInput, "5月")) {
         action = "may";
     }else if (ifHeard(checkInUserInput, "預訂")) {
         action = "booking";
