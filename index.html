@@ -6,26 +6,58 @@
     <title>祝你住宿愉快 Happy Stay</title>  
     <!--Bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body,html{
+           margin:0;
+           padding:0;
+           box-sizing: border-box;
+           background-image: url("/pic/279667_0.jpg"); 
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: cover;
+        }
 
+        .btn1{
+            background-color:transparent !important;
+            background-image: url("/pic/EGDAA4小海報_20241202_154525_0000.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            text-decoration: none;
+            color:transparent !important;
+        }
+        .btn2{
+            background-color:transparent !important;
+
+            background-image: url("/pic/EGDAA4小海報_20241202_154525_0001.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            text-decoration: none;
+            color:transparent !important;
+        }
+        .counter .modal-body{
+            background-image: url("/pic/279668_0.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container vh-100">
-        <div class="row justify-content-center align-items-center " style="height:40%">
-            <div class="col-12 text-center  ">
-                <h1 class="display-1 fw-bold " >歡迎光臨!</h1>
-            </div>
-        </div>
+       
 
-        <div class="row justify-content-center align-items-center " style="height:60%">
+        <div class="row justify-content-center align-items-center " style="height:100%">
             <div class="col-6 w-50 h-50 text-center">
                
                 <!---->
-                    <button type="button" onclick="addXbText('歡迎光臨!五色糰飯店~','checkIn');" class="btn btn-outline-success w-100 h-100 " data-bs-toggle="modal" data-bs-target="#checkInModal">
+                    <button type="button" onclick="addXbText('歡迎光臨!五色糰飯店~','checkIn');" class="btn1 btn btn-outline-success border-0 w-100 h-100 rounded-3 " data-bs-toggle="modal" data-bs-target="#checkInModal">
                         辦理入住
                     </button>
                     
                     <!-- Modal -->
-                    <div class="modal fade" id="checkInModal" tabindex="-1" aria-labelledby="checkInModalLabel" aria-hidden="true">
+                    <div class="modal fade counter" id="checkInModal" tabindex="-1" aria-labelledby="checkInModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -50,12 +82,12 @@
             </div>
             <div class="col-6 w-50 h-50 text-center">
                 <!---->
-                <button type="button" onclick="addXbText ('您好，有沒有什麼我可以幫您的？','checkOut');" class="btn btn-outline-danger w-100 h-100 " data-bs-toggle="modal" data-bs-target="#checkOutModal">
+                <button type="button" onclick="addXbText ('您好，有沒有什麼我可以幫您的？','checkOut');" class="btn2    btn btn-outline-danger border-0 w-100 h-100 rounded-3 " data-bs-toggle="modal" data-bs-target="#checkOutModal">
                     辦理退房
                 </button>
                 
                 <!-- Modal -->
-                <div class="modal fade" id="checkOutModal" tabindex="-1" aria-labelledby="checkOutModalLabel" aria-hidden="true">
+                <div class="modal fade counter" id="checkOutModal" tabindex="-1" aria-labelledby="checkOutModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content">
                         <div class="modal-header">
