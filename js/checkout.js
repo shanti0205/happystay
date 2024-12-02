@@ -29,7 +29,7 @@ function checkForCheckOutAction() {
             addXbText("好的，請問您房號是多少？","checkOut");
             break;
         case "room":
-            addXbText("好的，我們確認一下。請問您需要發票嗎？","checkOut");
+            addXbText("好的，我們確認一下。請問您需要統編嗎？","checkOut");
             break;
         case "needandthx":
             addXbText("不客氣，祝您旅途愉快！","checkOut");
